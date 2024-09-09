@@ -12,18 +12,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/davinci/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
 # Include the MIUI camera
 TARGET_USES_MIUI_CAMERA := true
 
-# Use MINI GApps
-TARGET_USES_MINI_GAPPS := true
+# ProjectBlaze
+BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := Jesse
+TARGET_UDFPS_ANIMATIONS := true
+WITH_GAPPS := true
 
 # Include Dolby
 TARGET_USES_DOLBY := true
 
-PRODUCT_NAME := lineage_davinci
+PRODUCT_NAME := blaze_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9T
