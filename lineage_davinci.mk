@@ -17,8 +17,11 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Include the MIUI camera
 TARGET_USES_MIUI_CAMERA := true
 
-# Use MINI GApps
-TARGET_USES_MINI_GAPPS := true
+# Sakura stuff
+SAKURA_OFFICIAL := false
+SAKURA_MAINTAINER := Jezzay97
+TARGET_BOOT_ANIMATION_RES := 1080
+SAKURA_BUILD_TYPE := gapps
 
 # Include Dolby
 TARGET_USES_DOLBY := true
