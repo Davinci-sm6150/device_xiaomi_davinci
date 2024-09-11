@@ -14,9 +14,6 @@ $(call inherit-product, device/xiaomi/davinci/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Include the MIUI camera
-TARGET_USES_MIUI_CAMERA := true
-
 # Sakura stuff
 SAKURA_OFFICIAL := false
 SAKURA_MAINTAINER := Jezzay97
